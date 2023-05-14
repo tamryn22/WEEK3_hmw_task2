@@ -2,9 +2,10 @@
 let users = ["Jim", "Mike", "Dave", "Josh", "Tim", "Jane", "Susan", "Haley", "Matthew", "John", "Spencer", "Stephan", "Mable", "Steve", "Jacob", "Ruby", "Adam", "Bruce"];
 let stevePresent = false;
 
-for(let i = 0; i < users.length; i++)
-if (users [i] === "Steve"){
-    stevePresent = true;
+for(let i = 0; i < users.length; i++){
+    if (users [i] === "Steve"){
+        stevePresent = true;
+    }
 }
 
 if (stevePresent === true){
@@ -24,7 +25,7 @@ for (let i =0; i < computers.length; i ++){
  totalPower += computers [i];
     console.log (totalPower)
 }
-if (totalPower <= requiredPower){
+if (totalPower >= requiredPower){
     console.log ("There is enough power!");
 } else{
     console.log ("There is Not enough power!")
@@ -39,13 +40,13 @@ for (let i =0; i <100; i++){
 }
 //ex4
 let marks = [23, 45, 67, 55, 80, 90, 45, 60, 56, 30, 31];
-let sum = 0
+let total = 0
 
-for (let i = 0; i <marks.length; i++){
+for (let i = 0; i < marks.length; i++){
   total += marks[i];
 }
 let average = total/marks.length 
-console.log("The Average is" + average)
+console.log(average);
 
 
 
@@ -57,13 +58,13 @@ let ageTwo = 16;
 let userTwo = "Jacob";
 
 if( ageOne > 18 && userOne === "Josh"){
-    console.log("User and Age Match")
+    console.log("User and Age Match");
 } else{
     console.log("User and Age Do Not Match")
 }
 
 //ex5
-if( ageTwo> 18 || userTwo === "Peter"){
+if( ageTwo < 18 || userTwo === "Peter"){
     console.log("User is Younger than 18 or is Peter")
 } else{
     console.log("User is Younger than 18 and is Not Peter")
